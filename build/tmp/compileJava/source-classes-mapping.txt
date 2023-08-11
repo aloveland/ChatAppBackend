@@ -1,0 +1,74 @@
+dynamoDB/Objects/ConversationsDao.java
+ dynamoDB.Objects.ConversationsDao
+dynamoDB/Objects/MessageContent.java
+ dynamoDB.Objects.MessageContent
+requests/GetMostRecentMessageNumRequest.java
+ requests.GetMostRecentMessageNumRequest
+Activity/GetRecipientsActivity.java
+ Activity.GetRecipientsActivity
+lambda/GetRecipientsActivityProvider.java
+ lambda.GetRecipientsActivityProvider
+requests/LoadConversationRequest.java
+ requests.LoadConversationRequest
+ requests.LoadConversationRequest$Builder
+requests/GetConversationsRequest.java
+ requests.GetConversationsRequest
+ requests.GetConversationsRequest$Builder
+requests/CreateConversationRequest.java
+ requests.CreateConversationRequest
+requests/GetRecipientsRequest.java
+ requests.GetRecipientsRequest
+results/GetMostRecentMessageNumResult.java
+ results.GetMostRecentMessageNumResult
+dynamoDB/Objects/Conversations.java
+ dynamoDB.Objects.Conversations
+results/GetConversationsResults.java
+ results.GetConversationsResults
+ results.GetConversationsResults$Builder
+Activity/LoadConversationActivity.java
+ Activity.LoadConversationActivity
+lambda/GetConversationsActivityProvider.java
+ lambda.GetConversationsActivityProvider
+results/LoadConversationResult.java
+ results.LoadConversationResult
+ results.LoadConversationResult$Builder
+results/GetRecipientsResults.java
+ results.GetRecipientsResults
+lambda/AddMessageToConversationActivityProvider.java
+ lambda.AddMessageToConversationActivityProvider
+Activity/GetMostRecentMessageNumActivity.java
+ Activity.GetMostRecentMessageNumActivity
+requests/AddMessageToConversationRequest.java
+ requests.AddMessageToConversationRequest
+lambda/LoadConversationActivityProvider.java
+ lambda.LoadConversationActivityProvider
+lambda/GetMostRecentMessageNumProvider.java
+ lambda.GetMostRecentMessageNumProvider
+dynamoDB/Objects/ConversationData.java
+ dynamoDB.Objects.ConversationData
+results/AddMessageToConversationResult.java
+ results.AddMessageToConversationResult
+Activity/GetMessagesActivity.java
+ Activity.GetMessagesActivity
+Activity/AddMessageToConversationActivity.java
+ Activity.AddMessageToConversationActivity
+Activity/GetConversationsActivity.java
+ Activity.GetConversationsActivity
+lambda/GetMessagesActivityProvider.java
+ lambda.GetMessagesActivityProvider
+results/GetMessagesResult.java
+ results.GetMessagesResult
+ results.GetMessagesResult$Builder
+utils/GenerateIds.java
+ utils.GenerateIds
+requests/GetMessagesRequest.java
+ requests.GetMessagesRequest
+ requests.GetMessagesRequest$Builder
+dynamoDB/Objects/MessagesDao.java
+ dynamoDB.Objects.MessagesDao
+lambda/CreateConversationActivityProvider.java
+ lambda.CreateConversationActivityProvider
+Activity/CreateConversationActivity.java
+ Activity.CreateConversationActivity
+results/CreateConversationResult.java
+ results.CreateConversationResult
