@@ -1,9 +1,15 @@
+Activity/LoadRecipientsActivity.java
+ Activity.LoadRecipientsActivity
 dynamoDB/Objects/ConversationsDao.java
  dynamoDB.Objects.ConversationsDao
 dynamoDB/Objects/MessageContent.java
  dynamoDB.Objects.MessageContent
+dynamoDB/Objects/LoadConvo.java
+ dynamoDB.Objects.LoadConvo
 requests/GetMostRecentMessageNumRequest.java
  requests.GetMostRecentMessageNumRequest
+lambda/StartNewConversationActivityProvider.java
+ lambda.StartNewConversationActivityProvider
 Activity/GetRecipientsActivity.java
  Activity.GetRecipientsActivity
 lambda/GetRecipientsActivityProvider.java
@@ -14,6 +20,8 @@ requests/LoadConversationRequest.java
 requests/GetConversationsRequest.java
  requests.GetConversationsRequest
  requests.GetConversationsRequest$Builder
+lambda/LoadRecipientsActivityProvider.java
+ lambda.LoadRecipientsActivityProvider
 requests/CreateConversationRequest.java
  requests.CreateConversationRequest
 requests/GetRecipientsRequest.java
@@ -22,13 +30,19 @@ results/GetMostRecentMessageNumResult.java
  results.GetMostRecentMessageNumResult
 dynamoDB/Objects/Conversations.java
  dynamoDB.Objects.Conversations
+requests/StartNewConversationRequest.java
+ requests.StartNewConversationRequest
+ requests.StartNewConversationRequest$Builder
 results/GetConversationsResults.java
  results.GetConversationsResults
  results.GetConversationsResults$Builder
+results/StartNewConversationResult.java
+ results.StartNewConversationResult
+ results.StartNewConversationResult$Builder
 Activity/LoadConversationActivity.java
  Activity.LoadConversationActivity
-lambda/GetConversationsActivityProvider.java
- lambda.GetConversationsActivityProvider
+Activity/CreateConversationActivity.java
+ Activity.CreateConversationActivity
 results/LoadConversationResult.java
  results.LoadConversationResult
  results.LoadConversationResult$Builder
@@ -46,16 +60,22 @@ lambda/GetMostRecentMessageNumProvider.java
  lambda.GetMostRecentMessageNumProvider
 dynamoDB/Objects/ConversationData.java
  dynamoDB.Objects.ConversationData
-results/AddMessageToConversationResult.java
- results.AddMessageToConversationResult
+requests/LoadRecipientsRequest.java
+ requests.LoadRecipientsRequest
+ requests.LoadRecipientsRequest$Builder
+lambda/CreateConversationActivityProvider.java
+ lambda.CreateConversationActivityProvider
+results/LoadRecipientsResult.java
+ results.LoadRecipientsResult
+ results.LoadRecipientsResult$Builder
 Activity/GetMessagesActivity.java
  Activity.GetMessagesActivity
 Activity/AddMessageToConversationActivity.java
  Activity.AddMessageToConversationActivity
 Activity/GetConversationsActivity.java
  Activity.GetConversationsActivity
-lambda/GetMessagesActivityProvider.java
- lambda.GetMessagesActivityProvider
+results/CreateConversationResult.java
+ results.CreateConversationResult
 results/GetMessagesResult.java
  results.GetMessagesResult
  results.GetMessagesResult$Builder
@@ -66,9 +86,11 @@ requests/GetMessagesRequest.java
  requests.GetMessagesRequest$Builder
 dynamoDB/Objects/MessagesDao.java
  dynamoDB.Objects.MessagesDao
-lambda/CreateConversationActivityProvider.java
- lambda.CreateConversationActivityProvider
-Activity/CreateConversationActivity.java
- Activity.CreateConversationActivity
-results/CreateConversationResult.java
- results.CreateConversationResult
+lambda/GetMessagesActivityProvider.java
+ lambda.GetMessagesActivityProvider
+Activity/StartNewConversationActivity.java
+ Activity.StartNewConversationActivity
+lambda/GetConversationsActivityProvider.java
+ lambda.GetConversationsActivityProvider
+results/AddMessageToConversationResult.java
+ results.AddMessageToConversationResult

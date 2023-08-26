@@ -7,7 +7,7 @@ import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBScanExpression;
-
+import utils.GenerateIds;
 
 
 import java.util.List;
@@ -33,5 +33,32 @@ public class ConversationsDao {
         Conversations conversations = this.dynamoDBMapper.load(Conversations.class, email);
         List<String> convoIds = conversations.getConvoIds();
         return convoIds;
+    }
+
+    public List<LoadConvo> getAllUserConvos(String email){
+        LoadConvo loadConvoKey = new LoadConvo();
+        loadConvoKey.setEmail(email);
+
+        DynamoDBQueryExpression<LoadConvo> queryExpression = new DynamoDBQueryExpression<LoadConvo>()
+                .withHashKeyValues(loadConvoKey);
+        List<LoadConvo> result = dynamoDBMapper.query(LoadConvo.class, queryExpression);
+        return result;
+    }
+    public LoadConvo StartNewConversation(String email, String recipient){
+        String convoNum = GenerateIds.GenerateMessageId();
+        String conversationId = GenerateIds.GenerateMessageId();
+        LoadConvo newConvo = new LoadConvo();
+        newConvo.setEmail(email);
+        newConvo.setconvoNum(convoNum);
+        newConvo.setconversationId(conversationId);
+        newConvo.setRecipient(recipient);
+        dynamoDBMapper.save(newConvo);
+        newConvo = new LoadConvo();
+        newConvo.setEmail(recipient);
+        newConvo.setconvoNum(convoNum);
+        newConvo.setconversationId(conversationId);
+        newConvo.setRecipient(email);
+        dynamoDBMapper.save(newConvo);
+        return newConvo;
     }
 }
